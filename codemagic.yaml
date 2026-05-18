@@ -3,7 +3,7 @@ workflows:
     name: NexBeat Build
 
     environment:
-      android_signing: false
+      flutter: stable
 
     scripts:
       - ./gradlew clean
