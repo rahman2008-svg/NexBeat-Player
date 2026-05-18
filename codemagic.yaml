@@ -1,0 +1,13 @@
+workflows:
+  android-build:
+    name: NexBeat Build
+
+    environment:
+      android_signing: false
+
+    scripts:
+      - ./gradlew clean
+      - ./gradlew assembleRelease
+
+    artifacts:
+      - app/build/outputs/**/*.apk
